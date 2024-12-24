@@ -1,0 +1,29 @@
+.main {
+    position: relative;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;  
+    transition: opacity 0.3s ease;  
+  }
+  
+  .main:hover .swiper-button-next,
+  .main:hover .swiper-button-prev {
+    opacity: 1; 
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 20px;                
+    height: 20px;               
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;            
+    color: white;               
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
