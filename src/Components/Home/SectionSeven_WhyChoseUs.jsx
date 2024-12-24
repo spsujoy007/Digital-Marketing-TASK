@@ -94,6 +94,16 @@ const SectionSeven_WhyChoseUs = () => {
                     </div>
                 </Container>
             </section>
+
+            <section className='bg-[#e0e3cc] h-screen pt-[100px] overflow-hidden'>
+                <Container>
+                    <div className='mt-[90px]'>
+                        <h4 className='text-3xl text-black font-light  leading-0 text-center'>Have you project in mind?</h4>
+                        <h1 className='text-[5.21vw] text-center font-light leading-0'>Let's make something <br />great together!</h1>
+                    </div>
+                    
+                </Container>
+            </section>
         </div>
     );
 };
