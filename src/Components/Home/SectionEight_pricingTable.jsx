@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Container from '../Common/Container';
-import { FaCheck } from 'react-icons/fa6';
+import { FaCheck, FaMinus, FaPlus } from 'react-icons/fa6';
 
 const SectionEight_pricingTable = () => {
 
@@ -42,10 +42,15 @@ const SectionEight_pricingTable = () => {
                                 {
                                     faqlist.map(faq => (
                                         <div onClick={() => setActiveIndex(faq.id === activeIndex ? 0 : faq.id)} key={faq.id} className={`py-4 select-none cursor-pointer ${faq.id === 1 ? "border-y-[1px]" : "border-b-[1px]"} border-black `}>
-                                            <h1 className='text-lg font-medium'>{faq.title}</h1>
+                                            <div className='flex justify-between items-center'>
+                                                <h1 className='text-lg font-medium'>{faq.title}</h1>
+                                                {
+                                                    activeIndex === faq.id ? <FaMinus /> : <FaPlus />
+                                                }
+                                            </div>
                                             <div className={`duration-500 ${activeIndex === faq.id ? "h-full" : "h-0 "} overflow-hidden`}>
                                                 {
-                                                    activeIndex === faq.id && <p className={`text-gray-500 mt-4`}>{faq.description}</p>
+                                                    activeIndex === faq.id && <p className={`text-gray-600 mt-4`}>{faq.description}</p>
                                                 }
                                             </div>
                                         </div>

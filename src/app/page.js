@@ -1,6 +1,8 @@
+import Footer from "@/Components/Home/Footer";
 import SectionEight_pricingTable from "@/Components/Home/SectionEight_pricingTable";
 import SectionFive_Featured from "@/Components/Home/SectionFive_Featured";
 import SectionFour_Services from "@/Components/Home/SectionFour_Services";
+import SectionNine_Blogs from "@/Components/Home/SectionNine_Blogs";
 import SectionOne from "@/Components/Home/SectionOne";
 import SectionSeven_WhyChoseUs from "@/Components/Home/SectionSeven_WhyChoseUs";
 import SectionSix_Testimonial from "@/Components/Home/SectionSix_Testimonial";
@@ -18,6 +20,8 @@ export default function Home() {
       <SectionSix_Testimonial></SectionSix_Testimonial>
       <SectionSeven_WhyChoseUs></SectionSeven_WhyChoseUs>
       <SectionEight_pricingTable></SectionEight_pricingTable>
+      <SectionNine_Blogs></SectionNine_Blogs>
+      <Footer></Footer>
     </div>
   );
 }
