@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../Common/Container';
+import Image from 'next/image';
 
 const SectionSeven_WhyChoseUs = () => {
     return (
@@ -56,6 +57,39 @@ const SectionSeven_WhyChoseUs = () => {
                                 <h2 className='text-[26px] uppercase font-medium'>Keyword</h2>
                                 <p>Your marketing strategy optimizing performances doesn't have to be a guessing game.</p>
                             </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
+
+            <section className='bg-[#fffaf0] h-screen flex justify-center items-center pt-[150px] overflow-hidden'>
+                <Container>
+                    <p className='text-lg uppercase text-black font-medium leading-0'>why <br />choose us</p>
+                    <div className='flex'>
+                        <div className='mt-[100px] w-[40%] grid grid-cols-2 gap-y-[100px]'>
+                            <div className=''>
+                                <h1 className='text-[100px] '>25k</h1>
+                                <p className='text-xl font-normal text-gray-500'>Project <br />completed</p>
+                            </div>
+
+                            <div className=''>
+                                <h1 className='text-[100px] '>8k</h1>
+                                <p className='text-xl font-normal text-gray-500'>Happy <br />customers </p>
+                            </div>
+                            
+                            <div className=''>
+                                <h1 className='text-[100px] '>15</h1>
+                                <p className='text-xl font-normal text-gray-500'>Years <br />experiences</p>
+                            </div>
+
+                            <div className=''>
+                                <h1 className='text-[100px] '>98</h1>
+                                <p className='text-xl font-normal text-gray-500'>Awards <br /> achievement</p>
+                            </div>
+                        </div>
+
+                        <div className='w-[60%]'>
+                            <Image className='w-full h-full' width={500} height={800} alt='' src={'/images/whychoseus.png'}></Image>
                         </div>
                     </div>
                 </Container>
