@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar></Navbar>
         <AntdRegistry>
-          {children}
+          <div className="w-screen overflow-hidden">
+            {children}
+          </div>
         </AntdRegistry>
       </body>
     </html>

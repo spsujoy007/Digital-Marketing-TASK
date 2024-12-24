@@ -7,9 +7,9 @@ const SectionTwo_workWith = () => {
     return (
         <div className='my-[150px]'>
             <Container>
-                <p className='text-xl uppercase text-center text-black'>We worked with global largest brands</p>
+                <p className='md:text-xl text-2xl uppercase text-center text-black'>We worked with global largest brands</p>
                 
-                <div className='md:flex flex-wrap lg:grid grid-cols-6 items-center mt-[75px] gap-[150px] w-full '>
+                <div className='grid lg:grid-cols-6 grid-cols-2 px-5 md:px-0 items-center mt-[75px] gap-[150px] w-full '>
                     <Image className='' width={150} height={40} alt='company logo' src={'https://res.cloudinary.com/cloudinarybysp/image/upload/v1735022985/JOB%20TASK/k0fz8ifph2zis0gbdecp.png'}></Image>
                     <Image className='' width={150} height={40} alt='company logo' src={'https://res.cloudinary.com/cloudinarybysp/image/upload/v1735022985/JOB%20TASK/vtgfrhbbtxnz83ex09ba.png'}></Image>
                     <Image className='' width={150} height={40} alt='company logo' src={'https://res.cloudinary.com/cloudinarybysp/image/upload/v1735022985/JOB%20TASK/nrhi6e9fsvxufxdnvkio.png'}></Image>

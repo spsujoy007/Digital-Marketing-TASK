@@ -7,11 +7,11 @@ const SectionNine_Blogs = () => {
     return (
         <div className='py-[100px] min-h-screen'>
             <Container>
-                <div className='flex justify-center'>
+                <div className='md:flex justify-center'>
                    <div>
                         <h4 className='text-lg uppercase text-gray-500'>Recent Blog</h4>
                         <h1 className='text-[60px] uppercase font-medium leading-none'>Read Updated <br />Journal</h1>
-                        <p className='w-[350px] py-[80px] pl-[45px] ml-[200px] border-l-[1px] border-gray-300 mt-[40px] text-gray-600'>
+                        <p className='md:w-[350px] md:py-[80px] py-5 md:pl-[45px] md:ml-[200px] md:border-l-[1px] border-gray-300 md:mt-[40px] text-gray-600'>
                             Read our blog and try to see everything
                             from every perspective. Our passion lies
                             in making everything accessible and
@@ -20,10 +20,10 @@ const SectionNine_Blogs = () => {
                    </div>
                 </div>
 
-                <div className='flex justify-start'>
-                    <div className="w-1/2 relative">
-                        <div className='w-[340px] h-[500px]'>
-                            <Image className='w-full h-full' width={320} height={800} alt='blog' src={'/images/blog1.jpg'}></Image>
+                <div className='flex flex-col md:flex-row justify-start'>
+                    <div className="md:w-1/2 w-full relative">
+                        <div className='md:w-[340px] md:h-[500px]'>
+                            <Image className='w-full h-full' width={400} height={800} alt='blog' src={'/images/blog1.jpg'}></Image>
                         </div>
 
                         <div className='bg-white p-12 absolute bottom-0 right-0 w-[400px]'>
@@ -33,9 +33,9 @@ const SectionNine_Blogs = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 relative">
-                        <div className='w-[340px] h-[500px]'>
-                            <Image className='w-full h-full' width={320} height={800} alt='blog' src={'/images/blog2.jpg'}></Image>
+                    <div className="md:w-1/2 w-full relative">
+                        <div className='md:w-[340px] md:h-[500px]'>
+                            <Image className='w-full h-full' width={400} height={800} alt='blog' src={'/images/blog2.jpg'}></Image>
                         </div>
 
                         <div className='bg-white p-12 absolute bottom-0 right-0 w-[400px]'>

@@ -76,17 +76,13 @@ const Navbar = () => {
           </div>
 
           <div className="flex space-x-[25px] items-center">
-            <button
-             className="text-2xl"   
-            >
+            <button className="text-2xl">
                 <IoSearch />
             </button>
 
             <div className="bg-gray-300 rounded-full w-[1.5px] h-[20px]"></div>
 
-            <button
-             className="text-2xl "   
-            >
+            <button className="text-2xl">
                 <CgMenuRight />
             </button>
             

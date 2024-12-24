@@ -35,10 +35,10 @@ const SectionEight_pricingTable = () => {
             <Container>
                 <div className='mt-[100px]'>
                     <h5 className='text-lg uppercase font-medium text-gray-600'>Pricing Table</h5>
-                    <div className='flex'>
-                        <div className='md:w-[50%]'>
+                    <div className='flex flex-col md:flex-row'>
+                        <div className='md:w-[50%] w-full'>
                             <h1 className='uppercase text-[60px] font-medium leading-none mt-5'>Be kind to your <br />mind</h1>
-                            <div className='mt-16 mr-[150px]'>
+                            <div className='mt-16 md:mr-[150px]'>
                                 {
                                     faqlist.map(faq => (
                                         <div onClick={() => setActiveIndex(faq.id === activeIndex ? 0 : faq.id)} key={faq.id} className={`py-4 select-none cursor-pointer ${faq.id === 1 ? "border-y-[1px]" : "border-b-[1px]"} border-black `}>

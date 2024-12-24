@@ -22,7 +22,7 @@ const SectionSix_Testimonial = () => {
         <div className='min-h-screen'>
             <Container>
                 <div className='flex justify-center items-center h-screen'>
-                    <div className='w-[635px] '>
+                    <div className='md:w-[635px] w-full'>
                         <Swiper
                             spaceBetween={30}
                             centeredSlides={true}
