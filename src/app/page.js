@@ -1,3 +1,4 @@
+import SectionEight_pricingTable from "@/Components/Home/SectionEight_pricingTable";
 import SectionFive_Featured from "@/Components/Home/SectionFive_Featured";
 import SectionFour_Services from "@/Components/Home/SectionFour_Services";
 import SectionOne from "@/Components/Home/SectionOne";
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionFive_Featured></SectionFive_Featured>
       <SectionSix_Testimonial></SectionSix_Testimonial>
       <SectionSeven_WhyChoseUs></SectionSeven_WhyChoseUs>
+      <SectionEight_pricingTable></SectionEight_pricingTable>
     </div>
   );
 }
