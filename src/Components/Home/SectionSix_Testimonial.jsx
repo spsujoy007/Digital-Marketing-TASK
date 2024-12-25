@@ -15,11 +15,34 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Image from 'next/image';
 
 const SectionSix_Testimonial = () => {
+
+    // useEffect(() => {
+    //     let tl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: "#sectionThree",
+    //             start: "top 70%",
+    //             end: "bottom 0",
+    //             toggleActions: "play none none none",
+    //         },
+    //     });
+
+    //     tl.from('.textOne, .textTwo, .textThree', {
+    //         y: 50,
+    //         color: "#fff",
+    //         duration: 1,
+    //         rotateX: 56, rotateY: 9, rotateZ:7,
+    //         delay: 1,
+    //         stagger: 0.5,
+    //         otation: 360,
+    //         opacity: 0
+    //     })
+    // }, [])
     
     return (
-        <div className='min-h-screen'>
+        <div className='min-h-screen relative md:pb-[250px]'>
             <Container>
                 <div className='flex justify-center items-center h-screen'>
                     <div className='md:w-[635px] w-full'>
@@ -89,6 +112,14 @@ const SectionSix_Testimonial = () => {
                     </div>
                 </div>
             </Container>
+
+
+            <Image className='md:absolute hidden md:block top-[10%] left-[20%]' width={160} height={400} alt='testimonial' src={'/images/testi1.jpg'}></Image>
+            <Image className='md:absolute hidden md:block top-[15%] right-[30%]' width={100} height={400} alt='testimonial' src={'/images/testi2.jpg'}></Image>
+            <Image className='md:absolute hidden md:block top-[40%] left-[5%]' width={100} height={400} alt='testimonial' src={'/images/testi3.jpg'}></Image>
+            <Image className='md:absolute hidden md:block top-[55%] left-[8%]' width={250} height={400} alt='testimonial' src={'/images/testi5.jpg'}></Image>
+            <Image className='md:absolute hidden md:block top-[40%] right-[8%]' width={250} height={400} alt='testimonial' src={'/images/testi6.jpg'}></Image>
+            <Image className='md:absolute hidden md:block top-[60%] right-[18%]' width={120} height={400} alt='testimonial' src={'/images/testi7.jpg'}></Image>
         </div>
     );
 };

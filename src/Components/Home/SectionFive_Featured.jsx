@@ -32,11 +32,12 @@ const SectionFive_Featured = () => {
     setActiveIndex(swiper.activeIndex);
   };
 
+
     return (
-        <div className='min-h-screen bg-[#121212] py-[80px]'>
+        <div className='min-h-screen bg-[#121212] py-[80px]' id='sectionFive'>
             <Container>
                     <div className='main'>
-                    <p className='font-medium text-white uppercase pt-[107px] mb-8 md:mb-0'>Featured <br />Work</p>
+                    <p className='font-medium text-white uppercase pt-[107px] mb-8 md:mb-0 title'>Featured <br />Work</p>
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}

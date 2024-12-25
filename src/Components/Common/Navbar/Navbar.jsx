@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="md:mx-[50px] mx-[20px] py-[28px] flex justify-between items-center">
           <div>
             <a href="#" className=" font-bold text-2xl">
-              <Image alt="logo" src={logo} width={140} height={50}></Image>
+              <Image alt="logo" src={logo} width={140} height={80}></Image>
             </a>
           </div>
 
