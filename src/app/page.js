@@ -39,13 +39,31 @@ export default function Home() {
 
     if (dets.x && dets.y) {
       gsap.to('.cursorDot', {
-        x: dets.x - 5, // Offset for better alignment
+        x: dets.x - 5,
         y: dets.y - 5,
         duration: 1,
         ease: "back.Out",
       });
     }
   }, [dets]); // Runs when `dets` changes
+
+  // const handleMouseEnter = () => {
+  //   gsap.to('.cursor', {
+  //     x: dets.x - 25, // Offset for better alignment
+  //     y: dets.y - 25,
+  //     duration: 0.5,
+  //     borderColor: "#fff",
+  //     ease: "back.Out",
+  //   });
+
+  //   gsap.to('.cursorDot', {
+  //     x: dets.x - 5, // Offset for better alignment
+  //     y: dets.y - 5,
+  //     duration: 1,
+  //     b: "#fff",
+  //     ease: "back.Out",
+  //   });
+  // }
 
   return (
     <div onMouseMove={(dets) => {

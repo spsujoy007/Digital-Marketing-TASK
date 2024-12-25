@@ -1,17 +1,51 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from 'react';
 import Container from '../Common/Container';
 import Image from 'next/image';
+import gsap from 'gsap';
+import _ScrollTrigger from 'gsap/ScrollTrigger';
 
 const SectionSeven_WhyChoseUs = () => {
+
+    gsap.registerPlugin(_ScrollTrigger);
+
+    
+    
+    useEffect(() => {
+        // let tl = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: "#sectionThree",
+        //         start: "top 80%",
+        //         end: "bottom 0",
+        //         toggleActions: "play none none none",
+        //     },
+        // });
+
+        gsap.to("#sec1, #sec2, #sec3, #sec4", {
+            scrollTrigger: {
+                trigger: "#sectoinSev",
+                scroller: "body",
+                start: "top 0%",
+                end: "top -100%",
+                scrub: 6,
+                pin: true
+            },
+            transform: "translateX(-300%)",
+            delay: 1,
+            duration: 5
+        })
+    }, [])
+
+
     return (
-        <div className=''>
-            <section className='bg-[#fffaf0] min-h-screen flex justify-center items-center'>
+        <div className='flex w-full h-screen overflow-hidden' id='sectoinSev'>
+            <section id='sec1' className='bg-[#fffaf0] min-h-screen min-w-[100%] flex justify-center items-center'>
                 <Container>
                     <h1 className='text-[10vw] leading-none tracking-wider font-medium text-center uppercase'>why <br /> choose us</h1>
                 </Container>
             </section>
 
-            <section className='bg-[#f3ecec] min-h-screen flex justify-center items-center relative'>
+            <section id='sec2' className='bg-[#f3ecec] min-h-screen min-w-full flex justify-center items-center relative'>
                 <Container>
                     <div className='md:w-[50%] w-full'>
                         <p className='text-lg uppercase text-black font-semibold leading-0 mt-12 md:mt-0'>why <br />choose us</p>
@@ -62,7 +96,7 @@ const SectionSeven_WhyChoseUs = () => {
                 </Container>
             </section>
 
-            <section className='bg-[#fffaf0] h-screen flex justify-center items-center pt-[150px] overflow-hidden'>
+            <section id='sec3' className='bg-[#fffaf0] h-screen min-w-full flex justify-center items-center pt-[150px] overflow-hidden w-full'>
                 <Container>
                     <p className='text-lg uppercase text-black font-medium leading-0'>why <br />choose us</p>
                     <div className='flex md:flex-row flex-col'>
@@ -95,7 +129,7 @@ const SectionSeven_WhyChoseUs = () => {
                 </Container>
             </section>
 
-            <section className='bg-[#e0e3cc] h-screen pt-[100px] overflow-hidden'>
+            <section id='sec4' className='bg-[#e0e3cc] h-screen min-w-full pt-[100px] overflow-hidden'>
                 <Container>
                     <div className='mt-[90px]'>
                         <h4 className='text-3xl text-black font-light  leading-0 text-center'>Have you project in mind?</h4>
